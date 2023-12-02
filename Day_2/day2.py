@@ -11,7 +11,6 @@ with open("Day_2/input.txt") as f:
         line = re.split(r":|,|;", line)
         for token in line:
             if re.search(r"red", token):
-                print(token)
                 count = int(re.sub(r"\D", r"", token))
                 max_red = count if count > max_red else max_red
 
